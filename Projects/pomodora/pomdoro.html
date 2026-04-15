@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer | Portfolio</title>
+    <link rel="stylesheet" href="pomodoro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-toggle" id="theme-toggle">
+        <span>🌙</span>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="timer-display">
+                <svg class="progress-ring" viewBox="0 0 120 120">
+                    <circle class="progress-ring-bg" cx="60" cy="60" r="54" />
+                    <circle class="progress-ring-fill" id="progress-circle" cx="60" cy="60" r="54" />
+                </svg>
+                <div class="time" id="time-display">25:00</div>
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" id="start-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+                <button class="control-btn" id="pause-btn" disabled>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                </button>
+                <button class="control-btn" id="reset-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 5V1L7 6l5 5V7c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.14-7-7z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="settings">
+                <label>Work Duration (minutes)</label>
+                <input type="number" id="work-duration" value="25" min="1" max="60">
+            </div>
+        </div>
+    </div>
+
+    <script src="pomodoro.js"></script>
+</body>
+
+</html>"""
